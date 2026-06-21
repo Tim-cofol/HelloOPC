@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.log
+
+# Environment / secrets
+.env
+.env.local
+
+# Local context store (per-machine working data)
+.opc/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

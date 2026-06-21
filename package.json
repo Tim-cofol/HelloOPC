@@ -1,0 +1,43 @@
+{
+  "name": "hello-opc",
+  "version": "0.1.0",
+  "description": "飞书 (Lark) vibe 助手 — a CLI that drafts documents and analyzes Minutes (妙记) using a Lark CLI + documents + context system.",
+  "type": "module",
+  "bin": {
+    "opc": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx ./test/*.test.ts"
+  },
+  "keywords": [
+    "lark",
+    "feishu",
+    "飞书",
+    "cli",
+    "ai",
+    "vibe",
+    "minutes",
+    "妙记"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@larksuiteoapi/node-sdk": "^1.40.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
